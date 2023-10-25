@@ -29,7 +29,8 @@ imbalanced nature of the data.
 
 ### A Credit Risk Analysis Report
 
-#### Overview of the analysis
+
+### Overview of the analysis
 
 In order to predict the chances of a loan being healthy or at risk, these are the factors considered in the analysis:
 * Size of the loan 
@@ -60,8 +61,9 @@ Recognizing the data imbalance, an additional learning model from imblearn (imba
 
 #### 6) Re-evaluation: 
 Following resampling, the Logistic Regression model was again employed to evaluate the results of the resampled data and assess the impact on model performance.
+<br>
 
-#### Results
+### Results
 * Machine learning model 1
 
 Accuracy: Our model demonstrates a strong accuracy level of 0.99, correctly categorizing around 99% of all loans in our dataset. Nevertheless, it's crucial to be cautious about relying solely on high accuracy when dealing with imbalanced datasets, necessitating consideration of other evaluation metrics.
@@ -77,10 +79,10 @@ Accuracy: Our secondary model boasts an exceptionally high accuracy of 0.994, si
 Precision: The precision of our secondary model stands at around 0.994. This implies that when our model identifies a loan as "high-risk," it is accurate approximately 99.4% of the time. The model maintains an exceedingly low false positive rate, which reinforces its high reliability in flagging loans as risky.
 
 Recall (Sensitivity): The recall of our secondary model is approximately 0.994. This demonstrates that our model effectively captures 99.4% of the actual high-risk loans in the dataset. It achieves an extremely low false negative rate, indicating its rare instances of missing high-risk loans.
+<br>
 
-
-#### Summary
+### Summary
 
 The secondary model surpasses the primary model in terms of accuracy, precision, and recall. It attains nearly flawless scores across these three metrics, highlighting its exceptional capability in distinguishing between "healthy" and "high-risk" loans. When we compare the results with those of the primary model, it's evident that this improved performance is a direct outcome of achieving data balance.
 
-While the initial model did exhibit a respectable level of accuracy and remains effective in identifying risky loans, the secondary model's near-perfect precision and recall values for class 1 establish its exceptional reliability, making it a top choice for minimizing false negatives, or instances where it misses identifying high-risk loans.
+While the initial model did exhibit a respectable level of accuracy and remains effective in identifying risky loans, the secondary model is close to perfect precision and recall values for class 1 establish its exceptional reliability, making it a top choice for minimizing false negatives, or instances where it misses identifying high-risk loans.
